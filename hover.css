@@ -1,0 +1,232 @@
+.main-container {
+    width:75%;
+    text-align: center;
+    margin: 130px auto;
+}
+
+.flex-box {
+    padding:30px;
+    width: 75%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+}
+
+.button {
+    height: 60px;
+    width: 25%;
+    margin: 20 25;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    color:white;
+    overflow: hidden;
+}
+
+/*button1*/
+.music {
+    background-color: tomato;
+    color:white;
+}
+
+.music span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.music span:after {
+    content: '\260A';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.music:hover span {
+    padding-right: 30px;
+}
+
+.music:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+.chat{
+    background-color: rgb(0, 180, 0);
+    color:white;
+}
+
+.chat:hover {
+    cursor: pointer;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    background-color: rgb(0, 148, 0);
+}
+
+/*button8*/
+.hover {
+    color:tomato;
+    border: 2px solid tomato;
+}
+
+.hover::before {
+    background: tomato;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:-1;
+    transition: 0.6s ease-out;
+    height:0;
+    width:102%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.hover:hover::before{
+    height:360%;
+    transform: translate(-50%,-50%) rotate(135deg);
+}
+
+.hover:hover {
+    color:white;
+}
+
+.rotate {
+    background: blueviolet;
+    height:80px;
+    width:80px;
+    transition: 0.5s transform ease-in, 0.3s background ease-in;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom:10px;
+    text-align: center;
+}
+
+.rotate:hover {
+    background: rgb(255, 93, 255);
+    transform: rotate(-45deg);
+}
+
+.close1 {
+    color:green;
+    height:80px;
+    width:80px;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.4s transform ease-in, 0.4s transform ease-in;
+}
+
+.close1:hover {
+    transform: rotate(45deg);
+    color: red;
+}
+
+.pause {
+    border: 2px solid black;
+    border-radius:100%;
+    width:60px;
+    color:black;
+    padding-left: 8px;
+    transition: 0.3s transform ease;
+}
+
+.pause span::before {
+    content:"\25B6";
+}
+
+.pause:hover{
+    transform: translate(5px);
+    font-size: 1.8rem;
+}
+
+.play {
+    border:inset;
+    border-radius:100%;
+    width:60px;
+    color:black;
+    padding-left: 8px;
+    padding-bottom:5px;
+    transition: 0.3s transform ease;
+}
+
+.play span::before {
+    content:"\23F8";
+}
+
+.play:hover{
+    font-size: 1.8rem;
+}
+
+
+.like {
+    border: 1px solid blue;
+    color:blue;
+    height: 70px;
+    width:70px;
+    font-size: 3.5rem;
+}
+
+.like span::before {
+    content: "\2665";
+    position: absolute;
+    bottom:-5px;
+    left:15px;
+    overflow:visible;
+}
+
+.like span:hover {
+    left:20px;
+}
+
+.like:hover {
+    font-size:3.45rem;
+    color:red;
+}
+
+.strip {
+    background-image: repeating-linear-gradient(45deg, rgb(216, 12, 12) 10%, rgb(155, 0, 0) 20%, rgb(155, 0, 0) 20%,rgb(216, 12, 12) 10%);
+    background-size: 50%;
+    overflow: visible;
+    border-radius: 30px;
+}
+
+.strip:hover {
+    background-position-x: -20px;
+}
+
+.user {
+    border: 1px solid rgb(214, 182, 2);
+    height: 80px;
+    width:80px;
+    background:rgb(214, 182, 2);
+    color:white;
+}
+
+.user span::before {
+    content: "\1F464";
+    position: absolute;
+    left:-2px;
+    top:10px;
+    font-size: 5rem;
+    padding-bottom:2px;
+}
+
+.user:hover {
+    background: white;
+}
